@@ -22,8 +22,7 @@ Flixster Movies is an app that allows users to browse movies from the [The Movie
 
 ### App Walkthrough GIF
 
-
-<img src="https://imgur.com/E6bafks" width=250>Flixster Movies!<br>
+[Flixster Movies](https://imgur.com/E6bafks)
 
 ### Notes
 When adding AlamofireImage to the Podfile and installing, the method of doing so was outdated, and did not install AlamofireImage.
