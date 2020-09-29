@@ -46,7 +46,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             // Re-calls tableView functions at bottom to fetch data
             self.tableView.reloadData()
             
-            print(dataDictionary)
+            // print(dataDictionary)
               // TODO: Get the array of movies
               // TODO: Store the movies in a property to use elsewhere
               // TODO: Reload your table view data
@@ -75,11 +75,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         
         // For poster configuration, consult API configuration. Here, w185 chosen for pixel width of 185 (by me)
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let baseUrl = "https://image.tmdb.org/t/p/w200"
         let posterPath = movie["poster_path"] as! String // consult API! poster_path in this database. still has to be a string
         let posterUrl = URL(string: baseUrl + posterPath)
         
-        cell.posterView.af_setImage(withURL: posterUrl)
+        cell.posterView.af_setImage(withURL: posterUrl!)
         
         return cell
     }
